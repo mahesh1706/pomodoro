@@ -73,7 +73,68 @@ resetButton.addEventListener("click", resetTimer);
 resetTimer();
 
 
-const ITEMS_CONTAIER = document.getElementById("items");
-const ITEM_TEMPLATE = document.getElementById("itemTemplate");
-const ADD_ITEM_BUTTON = document.getElementById("add");
 
+// task to do list :
+let taskList = document.getElementById("task-list");
+let inputTask = document.getElementById("input-task");
+let savedTasks = [];
+
+function addTask() {
+  let task = inputTask.value.trim();
+  if (task !== "") {
+    let li = document.createElement("li");
+    li.innerHTML = "<span>" + task + "</span><button onclick='deleteTask(this)'>Delete</button>";
+    taskList.appendChild(li);
+    inputTask.value = "";
+  }
+}
+
+function deleteTask(button) {
+  let li = button.parentElement;
+  li.remove();
+}
+
+function saveTasks() {
+  savedTasks
+
+  function saveTasks() {
+  let tasks = [];
+  let liElements = taskList.getElementsByTagName("li");
+  for (let i = 0; i < liElements.length; i++) {
+  let task = liElements[i].getElementsByTagName("span")[0].textContent;
+  tasks.push(task);
+  }
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+  alert("Tasks saved successfully.");
+  }
+  
+  function loadTasks() {
+  let tasks = JSON.parse(localStorage.getItem("tasks"));
+  if (tasks !== null && tasks.length > 0) {
+  taskList.innerHTML = "";
+  for (let i = 0; i < tasks.length; i++) {
+  let li = document.createElement("li");
+  li.innerHTML = "<span>" + tasks[i] + "</span><button onclick='deleteTask(this)'>Delete</button>";
+  taskList.appendChild(li);
+  }
+  alert("Tasks loaded successfully.");
+  } else {
+  alert("No tasks found.");
+  }
+  }
+  
+  function deleteAllTasks() {
+  taskList.innerHTML = "";
+  localStorage.removeItem("tasks");
+  }
+  
+  window.onload = function() {
+  if (localStorage.getItem("tasks") !== null) {
+  savedTasks = JSON.parse(localStorage.getItem("tasks"));
+  for (let i = 0; i < savedTasks.length; i++) {
+  let li = document.createElement("li");
+  li.innerHTML = "<span>" + savedTasks[i] + "</span><button onclick='deleteTask(this)'>Delete</button>";
+  taskList.appendChild(li);
+  }
+  }
+  };
