@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="timer-container">
+      <div id="timer">50:00</div>
+      <div id="timer-label">Session</div>
+      <div id="start-stop" class="button">Start</div>
+      <div id="reset" class="button">Reset</div>
+    </div>
+    
+    <div id="items">
+<template id="item-template">
+  <div class="item">
+    <input type="checkbox" class="item-completed">
+    <input type="text" class="item-description">
+  </div>
+  
+</template>
+  <button id="add">Add Item</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
