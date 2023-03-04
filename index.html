@@ -3,25 +3,45 @@
   <head>
     <title>Pomodoro Timer</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="Booststrap" type="text/css" href="/bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"
   </head>
   <body>
-    <div class="timer-container">
-      <div id="timer">50:00</div>
-      <div id="timer-label">Session</div>
-      <div id="start-stop" class="button">Start</div>
-      <div id="reset" class="button">Reset</div>
-    </div>
+
+    <button type="banner" class="btn btn-primary">
+      <div class="timer-container">
+        <div id="timer">50:00</div>
+        <div id="timer-label">Session</div>
+        <div id="start-stop" class="button">Start</div>
+        <div id="reset" class="button">Reset</div>
+      </div> <span class="badge text-bg-secondary">4</span>
+    </button>
     
-    <div id="items">
-<template id="item-template">
-  <div class="item">
-    <input type="checkbox" class="item-completed">
-    <input type="text" class="item-description">
-  </div>
+    
+    <button type="banner" class="btn btn-primary">
+      <div class="timer-containerb">
+        <div id="timerb">10:00</div>
+        <div id="timer-labelb">Session</div>
+        <div id="start-stopb" class="button">Start</div>
+        <div id="resetb" class="button">Reset</div>
+      </div> <span class="badge text-bg-secondary">4</span>
+    </button>
+    
+    <button type="banner" class="btn btn-primary">
+      <div class="timer-containers">
+        <div id="timers">20:00</div>
+        <div id="timer-labels">Session</div>
+        <div id="start-stops" class="button">Start</div>
+        <div id="resets" class="button">Reset</div>
+      </div> <span class="badge text-bg-secondary"></span>
+    </button>
+    
+
   
 </template>
   <button id="add">Add Item</button>
     </div>
     <script src="script.js"></script>
+    <script src="break.js"></script>
+    <script src="session.js"></script>
   </body>
 </html>

@@ -6,10 +6,10 @@ let breakLength = 5 * 60; // 5 minutes in seconds
 let isSession = true;
 let isRunning = false;
 
-const timer = document.getElementById("timer");
-const timerLabel = document.getElementById("timer-label");
-const startStopButton = document.getElementById("start-stop");
-const resetButton = document.getElementById("reset");
+const timers = document.getElementById("timers");
+const timerLabels = document.getElementById("timer-labels");
+const startStopButtons = document.getElementById("start-stops");
+const resetButtons = document.getElementById("resets");
 
 function startTimer() {
   isRunning = true;

@@ -18,6 +18,36 @@ body {
     margin-bottom: 20px;
   }
   
+  /* break */
+  .timer-containers {
+    margin-top: 50px;
+  }
+  
+  #timers {
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+  
+  #timer-labels {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .timer-containerb {
+    margin-top: 50px;
+  }
+  
+  #timerb {
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+  
+  #timer-labelb {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  
   .button {
     display: inline-block;
     margin: 10px;
