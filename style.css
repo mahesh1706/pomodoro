@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .timer-container {
+    margin-top: 50px;
+  }
+  
+  #timer {
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+  
+  #timer-label {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .button:active {
+    background-color: #3e8e41;
+    transform: translateY(2px);
+  }
+  
+
+  .item-descripition {
+    padding: 5px;
+    width:200px;
+    margin-button:10px;
+
+  }
+
+  .item-complelted:checked +.item-descripition {
+    background-color: red;
+    text-decoration: wavy;
+
+  }
+
+  #add {
+    padding: 8 px 14px;
+    font-weight: bold;
+    color: #ffff;
+    background-color: black;
+  }
