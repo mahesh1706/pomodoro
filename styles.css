@@ -17,7 +17,7 @@ body {
   align-items: center;
   gap:1rem;
  
-  background-image: url(/pomodoro-main/lo.jpg);
+  background-image: url('/lo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
