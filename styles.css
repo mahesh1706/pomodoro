@@ -70,7 +70,7 @@ input[type=radio]:checked + label {
 }
 
 .pomodoro-timer-wrapper {
-  width:50vmin;
+  width:auto;
   height:50vmin;
   border: 1px solid var(--accent);
   border-radius: 50%;
