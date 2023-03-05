@@ -1,0 +1,105 @@
+:root {
+  --main-bg: #ffffff;
+  --accent: rgb(95, 93, 93);
+  --main-text: #DBE0F7;
+  --inactive-text: #656A83;
+  --shadow: #ffffff;
+}
+
+body {
+  background: var(--main-bg);
+  color: var(--main-text);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  align-items: center;
+  gap:1rem;
+ 
+  background-image: url(/pomodoro-main/lo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  display:flex;
+  height:100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:2rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  opacity: 100%;
+  color: black;
+}
+
+.radio {
+  border: none;
+  background: var(--shadow);
+  display:inline-block;
+  border-radius: 2rem;
+  padding:1rem;
+}
+
+input[type=radio] {
+  display:none;
+}
+
+label {
+  cursor:pointer;
+  color: var(--inactive-text);
+  font-size: small;
+  border-radius:2rem;
+  padding:0.75rem 1rem;
+  transition: all 300ms;
+}
+
+input[type=radio]:checked + label {
+  background: var(--accent);
+  color: var(--main-bg)
+}
+
+.pomodoro-timer-wrapper {
+  width:50vmin;
+  height:50vmin;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  background-color: white;
+}
+.pomodoro-timer {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  color: black;
+}
+
+.time-left {
+  font-size:10vmin;
+}
+
+.pause {
+  font-size:3vmin;
+  letter-spacing: 0.5em;
+  background:none;
+  border:none;
+  color: var(--inactive-text);
+  cursor:pointer;
+  text-transform: uppercase;
+}
+
+.settings-btn {
+  background:none;
+  border:none;
+  cursor:pointer;
+  visibility: hidden;
+}
