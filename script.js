@@ -28,7 +28,7 @@ timer.textContent = '20:00'
 // Change timer settings with user input
 radio.addEventListener('change', () => {
   if (pomodoro.checked) {
-    timer.textContent = '30:00'
+    timer.textContent = '20:00'
     s = 1200
   } else if (short.checked) {
     timer.textContent = '5:00'
