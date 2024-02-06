@@ -23,7 +23,7 @@ control.addEventListener('click', () => {
 
 // Default timer settings
 let s = 1500;
-timer.textContent = '30:00'
+timer.textContent = '20:00'
 
 // Change timer settings with user input
 radio.addEventListener('change', () => {
